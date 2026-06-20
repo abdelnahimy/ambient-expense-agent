@@ -1,0 +1,16 @@
+[project]
+name = "ambient-expense-agent"
+version = "0.1.0"
+description = "Ambient ADK 2.0 Agent"
+requires-python = ">=3.11,<3.13"
+
+dependencies = [
+    "google-adk>=2.0.0a0",
+    "python-dotenv>=1.0.0",
+    "pydantic",
+    "google-genai",
+    "fastapi",
+    "uvicorn",
+]
+[project.optional-dependencies]
+eval = ["google-agents-cli"]
